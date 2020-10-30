@@ -10,7 +10,7 @@ fs.readFile('data/clients.csv', (err, data) => {
     } else {
         console.log(data);
         parse('data/clients.csv', { columns: false, trim: true}, (err, rows) => {
-            var dataArray = rows.split(/\r?\n/);
+            let dataArray = rows.split(/\r?\n/);
             console.log('this is dataarray' + dataArray);
         })
         
